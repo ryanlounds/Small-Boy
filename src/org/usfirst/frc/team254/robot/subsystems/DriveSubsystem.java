@@ -1,8 +1,8 @@
-package org.usfirst.frc.team1337.robot.subsystems;
+package org.usfirst.frc.team254.robot.subsystems;
 
-import org.usfirst.frc.team1337.robot.Robot;
-import org.usfirst.frc.team1337.robot.RobotMap;
-import org.usfirst.frc.team1337.robot.commands.JoystickDrive;
+import org.usfirst.frc.team254.robot.Robot;
+import org.usfirst.frc.team254.robot.RobotMap;
+import org.usfirst.frc.team254.robot.commands.JoystickDrive;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.PIDController;
@@ -40,18 +40,8 @@ public class DriveSubsystem extends Subsystem {
 		
 	}
 
-	public void joystickDrive(double x, double y) {
-				
-		/*if (Robot.oi.joystick1.getRawButtonPressed(10))
-			reverse *= -1;*/
-		if(Robot.oi.joystick2.getRawButton(6)) { //trigger off board compressor on/off
-			comp.start();
-		}else {
-			comp.stop();
-		}
-		myDrive.curvatureDrive(y * reverse, x, true);
-		
-
+	public void joystickDrive(double x, double y, boolean quickTurn) {
+		myDrive.curvatureDrive(y * reverse, x, quickTurn);
 	}
 
 	public void initDefaultCommand() {

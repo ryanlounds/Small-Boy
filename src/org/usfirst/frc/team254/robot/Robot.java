@@ -1,11 +1,11 @@
 
-package org.usfirst.frc.team1337.robot;
+package org.usfirst.frc.team254.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 
-import org.usfirst.frc.team1337.robot.commands.JoystickDrive;
-import org.usfirst.frc.team1337.robot.subsystems.DriveSubsystem;
+import org.usfirst.frc.team254.robot.commands.JoystickDrive;
+import org.usfirst.frc.team254.robot.subsystems.DriveSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the

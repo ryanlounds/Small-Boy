@@ -1,4 +1,4 @@
-package org.usfirst.frc.team1337.robot;
+package org.usfirst.frc.team254.robot;
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
@@ -9,6 +9,4 @@ package org.usfirst.frc.team1337.robot;
 public class RobotMap {
 	public static final int LEFT_DRIVE_MASTER = 0;
 	public static final int RIGHT_DRIVE_MASTER = 1;
-
-
 }

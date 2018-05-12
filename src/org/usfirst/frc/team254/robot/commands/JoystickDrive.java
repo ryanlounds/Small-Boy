@@ -1,7 +1,7 @@
-package org.usfirst.frc.team1337.robot.commands;
+package org.usfirst.frc.team254.robot.commands;
 
-import org.usfirst.frc.team1337.robot.OI;
-import org.usfirst.frc.team1337.robot.Robot;
+import org.usfirst.frc.team254.robot.OI;
+import org.usfirst.frc.team254.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -21,7 +21,7 @@ public class JoystickDrive extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     		logging();
-    		Robot.driveSubsystem.joystickDrive(Robot.oi.joystick1.getRawAxis(OI.J1_LEFT_STICK_Y_AXIS), -Robot.oi.joystick1.getRawAxis(OI.J1_RIGHT_STICK_X_AXIS));   	
+    		Robot.driveSubsystem.joystickDrive(Robot.oi.getYSpeed(), Robot.oi.getXSpeed(), Robot.oi.getQuickTurn());
     }
 
     // Make this return true when this Command no longer needs to run execute()
