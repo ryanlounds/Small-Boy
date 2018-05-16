@@ -1,5 +1,5 @@
-# Small-Boy
-The smallest boy
+# Small Boy
+## :tired_face: The smallest boy :tired_face:
 
 <pre>
                       _ _   _                 
